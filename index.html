@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        body>div:nth-child(1){
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 50px;
+            font-size: larger;
+        }
+        body>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+        }
+        body>div:nth-child(1)>a:hover{
+            color: black;
+        }
+        body>div:nth-child(2){
+            margin-top: 50px;
+            margin-left: 100px;
+            border:1px solid rgb(213, 213, 213);
+            width: 85%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body>div:nth-child(2)>div:nth-child(1){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Masai-Task-Manager</p>
+        <a href="index.html">Home</a>
+        <a href="DeletedTask.html">Deleted Tasks</a>
+    </div>
+    <div>
+        <div>
+            <input type="text">
+            <input type="option" name="High" id="">
+            <button>Create Task</button>
+        </div>
+        <div>
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                  <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>task2</td>
+                    <td>low</td>
+                    <td>pending</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <tr>
+                    <td>task1</td>
+                    <td>medium</td>
+                    <td>in-progress</td>
+                    <td><button>Remove</button></td>
+                </tr>
+                <tr>
+                    <td>task3</td>
+                    <td>high</td>
+                    <td>complete</td>
+                    <td><button>Remove</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

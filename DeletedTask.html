@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        body>div:nth-child(1){
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 50px;
+            font-size: larger;
+        }
+        body>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+        }
+        body>div:nth-child(1)>a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Masai-Task-Manager</p>
+        <a href="index.html">Home</a>
+        <a href="DeletedTask.html">Deleted Tasks</a>
+    </div>
+    <div>
+        <h2>Deleted Tasks</h2>
+        <input type="text">
+        <input type="text">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Restore</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td>task2</td>
+                <td>low</td>
+                <td>pending</td>
+                <td><button>Restore</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>task1</td>
+                <td>medium</td>
+                <td>in-progress</td>
+                <td><button>Restore</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>task3</td>
+                <td>high</td>
+                <td>complete</td>
+                <td><button>Restore</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>task3</td>
+                <td>high</td>
+                <td>pending</td>
+                <td><button>Restore</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>task3</td>
+                <td>high</td>
+                <td>pending</td>
+                <td><button>Restore</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
